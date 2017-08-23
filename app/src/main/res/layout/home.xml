@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="zola.apps.com.cammy.Home"
+    android:background="#D2CBBB">
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/camButt"
+        android:background="@drawable/cam_butt"
+        android:layout_gravity="right|top"
+        android:layout_marginBottom="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/galleryButt"
+        android:background="@drawable/gallery_butt"
+        android:layout_gravity="left|top"
+        android:layout_alignTop="@+id/camButt"
+        android:layout_alignStart="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        android:id="@+id/textView"
+        android:layout_below="@+id/galleryButt"
+        android:layout_alignEnd="@+id/galleryButt"
+        android:layout_alignStart="@+id/galleryButt"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:textColor="#333" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:id="@+id/textView2"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/galleryButt"
+        android:layout_alignStart="@+id/camButt"
+        android:layout_alignEnd="@+id/camButt"
+        android:textColor="#333" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageView"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true" />
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+</RelativeLayout>

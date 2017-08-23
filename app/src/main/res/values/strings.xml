@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- CHANGE THE APP'S NAME AS YOU WISH -->
+    <string name="app_name">Cammy</string>
+
+
+    <!-- REPLACE THE STRING BELOW WITH ADMOB BANNER UNIT ID -->
+    <string name="ADMOB_BANNER_UNIT_ID">ca-app-pub-3120536913205473/5975042732</string>
+
+
+</resources>
