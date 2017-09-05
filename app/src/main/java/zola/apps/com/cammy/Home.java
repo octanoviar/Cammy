@@ -43,6 +43,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
         // Hide ActionBar
         getSupportActionBar().hide();
 
+        // add for pull request
 
         // MARK: - GALLERY BUTTON
         Button galButt = (Button)findViewById(R.id.galleryButt);
